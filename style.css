@@ -1,0 +1,352 @@
+body {
+    max-width: 1440px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+/* ....................................navbar.............................................. */
+
+.Navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Navinner {
+    padding: 50px 0px;
+    width: 90%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.Navcontent a {
+    padding: 0px 20px;
+    font-weight: 500;
+}
+
+/* .........................................container1................................................ */
+
+.container1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container1inner {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 200px;
+}
+
+.container1content {
+    width: 50%; 
+}
+
+.container1contentinner {
+    width: 85%;
+}
+
+.container1contentinner input {
+    padding: 10px;
+    width: 50%;
+    margin-right: 20px;
+}
+
+.container1contentinner button {
+    width: 35%;
+    padding: 10px;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    background-color: hsl(224, 93%, 58%);
+    font-weight: 400;
+}
+
+button:hover,
+.Navcontent a{
+    cursor: pointer;
+}
+
+.container1image {
+    width: 50%;
+}
+
+.container1image img {
+    width: 90%;
+}
+
+/* .........................................container2..................................................... */
+
+.container2 {
+    background-image: url(images/bg-curve-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container2inner {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2content {
+    width: 60%;
+}
+
+.container2contenttoppara p {
+    width: 70%;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+.container2imageright {
+    width: 40%;
+}
+
+.container2imageright img {
+    width: 100%;
+}
+
+.container2contenttoppara #greentext {
+    color: green;
+    text-decoration: underline;
+}
+
+.container2contentcard {
+    width: 50%;
+    margin-bottom: 150px;
+    border-radius: 5px;
+    box-shadow: 2px 0px 2px 2px rgb(201, 200, 200);
+}
+
+.container2contentcardbottom {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.container2contentcard p {
+    padding-left: 10px;
+}
+
+.container2contentcardbottom img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+/* .....................................container3............................................... */
+
+.container3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: hsl(238, 22%, 44%);
+}
+
+.container3inner {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0px;
+    color: white;
+    
+}
+
+.container3left,
+.container3right {
+    width: 40%;
+}
+
+.container3right input {
+    border: none;
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.container3right button {
+    border: none;
+    padding: 10px;
+    width: 35%;
+    color: white;
+    font-weight: 400;
+    border-radius: 2px;
+    background-color: hsl(224, 93%, 58%);
+}
+/* ..........................................footer...................................................... */
+
+.Footer {
+    width: 100%;
+    height: 100%;
+    background-color: hsl(243, 87%, 12%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Footerinner{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 100px 0px;
+}
+
+.Footerinner p,
+.Footerright i {
+    color: hsl(193, 100%, 95%);
+}
+
+.Footerright i {
+    font-size: 30px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.Footerright i:hover {
+    cursor: pointer;
+    border-color: hsl(197, 100%, 66%);
+    color: hsl(203, 100%, 66%);
+}
+
+.Footerleft,
+.Footerright{
+    text-align:left;
+    width: 30%;
+}
+
+.Footerleft img {
+    padding-right: 10px;
+}
+
+.Footerright {
+    display: grid;
+    gap: 100px;
+}
+
+.Footermiddle {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+@media screen and (max-width:600px){
+
+
+    .Navinner {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* .................container1.............. */
+
+
+    .container1inner {
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 100px;
+    }
+
+    .container1image,
+    .container1content{
+        width: 100%;
+    }
+
+    .container1image img{
+        width: 100%;
+    }
+
+    .container1contentinner{
+        width: 100%;
+    }
+
+    /* .......................container2........................ */
+
+    .container2inner {
+        flex-direction: column;
+    }
+
+    .container2content{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container2contenttop {
+        width: 100%;
+    }
+
+    .container2contenttoppara p{
+        width: 100%;
+    }
+
+    .container2imageright {
+        width: 100%;
+    }
+
+    .container2contentcard {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    /* ........................container3.................... */
+
+    .container3inner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container3inner>* {
+        width: 100%;
+    }
+
+    .container3right button{
+        width: 50%;
+    }
+
+    /* ........................footer........................... */
+
+    .Footerinner {
+        flex-direction: column;
+    }
+
+    .Footerleft,
+    .Footerright,
+    .Footermiddle {
+        width: 90%;
+    }
+
+    .Footerleft {
+        text-align: center;
+    }
+
+
+    .Footerright {
+        text-align: center;
+        gap: 50px;
+    }
+}
